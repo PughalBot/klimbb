@@ -8,8 +8,8 @@ const MovieCard = ({ movie }) => {
         alt={movie.title}
         className="w-full h-auto object-cover rounded-lg mb-4"
       />
-      <h2 className="text-md font-bold">{movie.title}</h2>
-      <p className="text-gray-600">Release Date: {movie.release_date}</p>
+      <h2 className="text-lg font-bold">{movie.title}</h2>
+      <p className="text-sm text-gray-600 font-bold">Release Date: <br></br><span className="text-md font-medium">{movie.release_date}</span></p>
     </div>
   );
 };
