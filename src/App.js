@@ -29,10 +29,10 @@ const App = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-purple-500 to-pink-500 min-h-screen flex flex-col justify-center items-center">
-      <h1 className="text-3xl text-white font-bold mb-8">Movie Search App</h1>
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full sm:max-w-lg md:max-w-3xl mx-auto">
-      <h1 className="w-full flex justify-center text-3xl font-medium mb-4 ">Search Movies By Actor Name</h1>
+    <div className="bg-black from-purple-500 to-pink-500 min-h-screen flex flex-col justify-center items-center">
+      <h1 className="text-[80px] font-btk text-white font-bold mt-8 mb-8">Movie Search App</h1>
+      {/* <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full sm:max-w-lg md:max-w-3xl mx-auto"> */}
+      <h1 className="w-full font-pp flex justify-center text-white text-3xl font-medium mb-4 ">Search Movies By Actor Name</h1>
         <SearchBar />
         {error && <p className="mt-4 flex justify-center text-red-500">{error}</p>}
         {movies.length === 0 && !error && (
@@ -59,7 +59,7 @@ const App = () => {
       </div>
         )}
       </div>
-    </div>
+    // </div>
   );
 };
 
