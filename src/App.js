@@ -6,7 +6,7 @@ import { searchMovies } from './redux/actions';
 import './index.css'
 const App = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [moviesPerPage] = useState(12);
+  const [moviesPerPage] = useState(15);
 
   const movies = useSelector((state) => state.movies);
   const error = useSelector((state) => state.error);
@@ -29,8 +29,8 @@ const App = () => {
   };
 
   return (
-    <div className="bg-black from-purple-500 to-pink-500 min-h-screen flex flex-col justify-center items-center">
-      <h1 className="text-[80px] font-btk text-white font-bold mt-8 mb-8">Movie Search App</h1>
+    <div className="bg-black scrollbar scrollbar-thin scrollbar-rounded-full scrollbar-thumb-gray-400 scrollbar-track-gray-300  min-h-screen flex flex-col justify-center items-center">
+      <h1 className="text-[40px] md:text-[80px] font-btk text-white font-bold mt-8 mb-8">Movie Search App</h1>
       {/* <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full sm:max-w-lg md:max-w-3xl mx-auto"> */}
       <h1 className="w-full font-pp flex justify-center text-white text-3xl font-medium mb-4 ">Search Movies By Actor Name</h1>
         <SearchBar />
@@ -38,7 +38,7 @@ const App = () => {
         {movies.length === 0 && !error && (
           <p className="mt-4 text-center text-red-600">No movies found for the specified actor.</p>
         )}
-        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {currentMovies.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}

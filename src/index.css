@@ -3,3 +3,15 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #DC2626;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
