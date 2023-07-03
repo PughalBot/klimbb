@@ -30,7 +30,8 @@ const SearchBar = () => {
           backgroundColor: 'rgba(55, 65, 81, var(--tw-text-opacity))',
           border: 'none',
           color: 'white',
-          minWidth: '300px',
+          minWidth: '100px',
+          masWidth: '300px',
         }}
       />
       <button
